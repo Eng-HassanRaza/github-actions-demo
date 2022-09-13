@@ -1,17 +1,12 @@
-name: Getting started
 
+name: hello-world
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+  
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
-    
     steps:
-      - uses: actions/checkout@v2
-      
-      - name: Run a one liner script
-      run: echo Hello word
+      - name: my-step
+        run: echo "Hello World!"
